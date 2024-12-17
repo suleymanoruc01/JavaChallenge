@@ -1,6 +1,8 @@
 # JavaChallenge
 Basic E-Commerce Project for Java Spring Boot
 
+Projeye ait dökümanlar store dizininde bulunmaktadır.
+
 ## Özellikler
 
 - **Müşteri Yönetimi**: Müşteri ekleme, düzenleme, silme ve listeleme.

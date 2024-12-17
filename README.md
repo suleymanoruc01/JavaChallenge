@@ -19,50 +19,50 @@ Basic E-Commerce Project for Java Spring Boot
 
 ## Kullanıcı Arayüzü
 
-###MÜŞTERİ EKLE
+MÜŞTERİ EKLE
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/1.png)
 
-###MÜŞTERİ DÜZENLE
+MÜŞTERİ DÜZENLE
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/2.png)
 
-###MÜŞTERİ DETAYLARI
+MÜŞTERİ DETAYLARI
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/3.png)
 
-###MÜŞTERİ LİSTESİ
+MÜŞTERİ LİSTESİ
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/4.png)
 
-###YENİ ÜRÜN OLUŞTUR
+YENİ ÜRÜN OLUŞTUR
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/5.png)
 
-###ÜRÜN DÜZENLE
+ÜRÜN DÜZENLE
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/6.png)
 
-###ÜRÜN LİSTESİ
+ÜRÜN LİSTESİ
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/7.png)
 
-###SEPETE ÜRÜN EKLE
+SEPETE ÜRÜN EKLE
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/8.png)
 
-###SEPETTEN ÜRÜN ÇIKAR
+SEPETTEN ÜRÜN ÇIKAR
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/9.png)
 
-###SEPET DETAYLARI
+SEPET DETAYLARI
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/10.png)
 
-###MÜŞTERİ SİPARİŞLERİ
+MÜŞTERİ SİPARİŞLERİ
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/11.png)
 
-###SİPARİŞ DETAY
+SİPARİŞ DETAY
 
 ![image alt](https://github.com/suleymanoruc01/JavaChallenge/blob/95233139d139a98d87f0140564a4b9424ad55840/images/12.png)

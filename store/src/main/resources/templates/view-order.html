@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sipariş Detayı</title>
+</head>
+<body>
+<h1>Sipariş Detayı</h1>
+
+<p><strong>Sipariş Numarası:</strong> <span th:text="${order.id}"></span></p>
+<p><strong>Müşteri:</strong> <span th:text="${order.customer.name}"></span></p>
+<p><strong>Sipariş Toplam Fiyat:</strong> <span th:text="${order.totalPrice}"></span></p>
+
+<h2>Sipariş Öğeleri</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Ürün Adı</th>
+        <th>Miktar</th>
+        <th>Ürün Fiyatı</th>
+        <th>Toplam Fiyat</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${order.items}">
+        <td th:text="${item.productName}"></td>
+        <td th:text="${item.quantity}"></td>
+        <td th:text="${item.priceAtOrder/item.quantity}"></td>
+        <td th:text="${item.priceAtOrder}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/order/customer/{id}(id=${order.customer.id})}">Siparişlerime Git</a>
+</body>
+</html>

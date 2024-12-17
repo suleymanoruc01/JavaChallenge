@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Yeni Müşteri Ekle</title>
+</head>
+<body>
+<h1>Yeni Müşteri Ekle</h1>
+
+
+<form action="/add" method="post">
+    <label for="name">Müşteri Adı:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <button type="submit">Ekle</button>
+</form>
+
+
+<br>
+<a href="/list-customers">Müşteri Listesine Dön</a>
+</body>
+</html>

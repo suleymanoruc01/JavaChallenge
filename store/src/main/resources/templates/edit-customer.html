@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Müşteri Düzenle</title>
+</head>
+<body>
+<h1>Müşteri Düzenle</h1>
+
+
+<form th:action= "@{/edit/{id} (id=${customer.id})}" th:object = "${customer}" method="post">
+    <input type="hidden" th:value="${customer.id}" name="id" />
+    <label for="name">Müşteri Adı:</label>
+    <input type="text" id="name" name="name" th:value="${customer.name}" required>
+    <br><br>
+    <button type="submit">Güncelle</button>
+</form>
+
+
+<br>
+<a href="/list-customers">Müşteri Listesine Dön</a>
+</body>
+</html>

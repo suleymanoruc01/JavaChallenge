@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sepet Detayları</title>
+</head>
+<body>
+<h1>Sepet Detayları</h1>
+
+<div th:if="${cart}">
+    <h2>Sepet ID: <span th:text="${cart.id}"></span></h2>
+    <h3>Toplam Ürün Sayısı: <span th:text="${cart.cartItems.size()}"></span></h3>
+    <h3>Toplam Tutar: <span th:text="${cart.totalPrice}"></span> TL</h3>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Ürün Adı</th>
+            <th>Adet</th>
+            <th>Toplam Fiyat</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${cartItems}">
+            <td th:text="${item.product.name}"></td>
+            <td th:text="${item.quantity}"></td>
+            <td th:text="${item.product.getPrice()*item.quantity}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div th:if="${message}">
+    <p th:text="${message}"></p>
+</div>
+
+<br>
+<form th:action="@{/{id}/empt(id=${cart.id})}" method="post" style="display:inline;">
+    <button type="submit">Sepeti Boşalt</button>
+</form>
+
+<form th:action="@{/place/{id}(id=${cart.id})}" method="post" style="display:inline;">
+    <button type="submit">Sepeti Onayla</button>
+</form>
+
+<a th:href="@{/list-customers}">Kişilere Geri Dön</a>
+<br>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sipariş Başarısız</title>
+</head>
+<body>
+<h1>Sipariş Oluşturulamadı</h1>
+<p th:text="${message}"></p>
+<a th:href="@{/list-customers}">Tekrar Deneyin</a>
+</body>
+</html>

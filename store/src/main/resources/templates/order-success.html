@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sipariş Başarılı</title>
+</head>
+<body>
+<h1>Sipariş Başarıyla Oluşturuldu</h1>
+
+<p th:text="${message}"></p>
+<p>Sipariş numaranız: <span th:text="${order.id}"></span></p>
+<p>Toplam fiyat: <span th:text="${order.totalPrice}"></span></p>
+<a th:href="@{/order/customer/{id}(id=${order.customer.id})}">Siparişlerime Git</a>
+
+</body>
+</html>

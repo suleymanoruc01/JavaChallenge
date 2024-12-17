@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ürünler</title>
+</head>
+<body>
+
+<h1>Ürünler</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Adı</th>
+        <th>Ücreti</th>
+        <th>Stok</th>
+        <th>---</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.name}">Ürün Adı</td>
+        <td th:text="${product.price}">Ürün Ücreti</td>
+        <td th:text="${product.stock}">Ürün Stok</td>
+        <td>
+            <a th:href="@{/list/ed/{id}(id=${product.id})}">Düzenle</a>
+            <a th:href="@{/list/del/{id}(id=${product.id})}">Sil</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="/list/create">Yeni Ürün oluştur</a>
+<a th:href="@{/list-customers}">Müşteri Listesine Dön</a>
+
+
+</body>
+</html>
